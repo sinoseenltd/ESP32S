@@ -13,6 +13,9 @@ Installation：
 1、https://docs.espressif.com/projects/esp-idf/en/v4.3.1/esp32/get-started/vscode-setup.html  
 2、https://zhuanlan.zhihu.com/p/630698425
 
+note:
+refrence product can view:https://www.sinoseen.com/ov5640-5mp-cmos-image-sensor-high-performance-color-camera-module
+
 #### User Instructions
 In the file `main/connect_wifi.c`, change  
 #define WIFI_SSID "******"  
