@@ -1,30 +1,28 @@
 # ESP32CAM
 
-#### 介绍
-深圳市鑫乐视科技有限公司
-ESP32CAM---摄像头例程
+#### Introduction
+Shenzhen Sinoseen Technology Co., Ltd.  
+ESP32CAM - Camera Example
 
-#### 软件架构
-基于IDF框架---版本使用的是IDFv5.1.2
+#### Software Architecture
+Based on the IDF framework - version used is IDF v5.1.2
 
+#### Uses Hardware SPI (IOMUX) to Drive LCD (ST7789)
+If IOMUX is not feasible, it is recommended to use GPIO matrix.
 
-#### 使用的是硬件SPI(IOMUX)驱动LCD（ST7789）
-IOMUX 不行的话建议使用 GPIO矩阵
 | LCD   | ESP32 |                    
---------------- | -------- |
-| GND  |   GND     | 
-| VCC  | 3.3(5)V   | 
-| SCK  | GPIO14   | 
-| SDA  | GPIO13   | 
-| RES  | GPIO15   | 
-| DC   | GPIO2   | 
-| BLK  | 悬空   | 
-
+|-------|-------|
+| GND   | GND   | 
+| VCC   | 3.3(5)V | 
+| SCK   | GPIO14 | 
+| SDA   | GPIO13 | 
+| RES   | GPIO15 | 
+| DC    | GPIO2  | 
+| BLK   | Not connected |
 ![alt text](1726714763310.jpg)
 
+#### User Instructions
 
-
-#### 使用说明
 | model   | max resolution | color type | output format                                                | Len Size |
 | ------- | -------------- | ---------- | ------------------------------------------------------------ | -------- |
 | OV2640  | 1600 x 1200    | color      | YUV(422/420)/YCbCr422<br>RGB565/555<br>8-bit compressed data<br>8/10-bit Raw RGB data | 1/4"     |
